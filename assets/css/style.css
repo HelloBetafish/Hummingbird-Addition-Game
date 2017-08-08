@@ -1,8 +1,4 @@
-#instructions, #winMessage, #lostMessage{
-  display:none;
-}
-
-body{
+body {
   /* Background pattern from Subtle Patterns  
   https://www.toptal.com/designers/subtlepatterns/?s=flower*/
   background-image:url("../images/tree_bark/tree_bark.png");
@@ -10,91 +6,94 @@ body{
   font-family: 'Merriweather', serif;
 }
 
-img{
+img {
   height : 360px;
   width : 240px;
 }
 
-img:hover{
+img:hover {
   opacity:.7;
 }
 
-.jumbotron{
+.jumbotron {
   background-color: mediumaquamarine;
   color:sienna;
+  opacity: .8;
 }
 
-.panel-title:hover{
+.panel-title:hover {
   font-weight: bold;
 }
 
-.panel-body{
+.panel-body {
   font-size: large;
 }
-.spacing{
-  margin:15px 0px;
-  padding:5px;
-}
 
-.caption{
+.caption {
   font-family: 'Pacifico', cursive;
   font-size: large;
 }
 
-#winMessage{
+.spacing {
+  margin:15px 0px;
+  padding:5px;
+}
+
+#instructions, #winMessage, #lostMessage {
+  display:none;
+}
+
+#winMessage {
   color:green;
   font-weight:bold;
   text-align:center;
 }
 
-#lostMessage{
+#lostMessage {
   color:crimson;
   font-weight:bold;
   text-align:center;
 }
 
-#losses{
+#losses {
   color:crimson;
 }
 
-#wins{
+#wins {
   color:green;
 }
 
-#target{
+#target {
   color:sienna;
 }
 
-#fluidCount{
+#fluidCount {
   font-size:xx-large;
   color:dimgray;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-body{
-  margin:auto;
-}
-.caption{
-  font-size: small;
-}
+  body {
+    margin:auto;
+  }
 
-img{
-  height : 180px;
-  width : 120px;
-  margin:auto;
-}
+  img {
+    height : 180px;
+    width : 120px;
+    margin:auto;
+  }
 
-h3{
-  font-size:small;
-}
-.spacing{
-  margin: 5px 0px;
-  padding:5px;
-}
-.caption{
-  display:none;
-}
-}
+  .caption {
+    display:none;
+  }
 
-@media screen and (max-width: 980px) and (min-width:769px){
+  .spacing {
+    margin: 5px 0px;
+    padding: 5px;
+  }
+
+  #winMessage, #lostMessage {
+  	font-size: small;
+  }
+}
