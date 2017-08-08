@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crystal Humminbgird Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--favicon from https://www.freefavicon.com/-->
+  <!--<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon"> -->
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Pacifico" rel="stylesheet">
+  <!-- Link to Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!--Jumbotron Header-->
+  <div class = "container">
+    <div class = "jumbotron text-center"> 
+      <h1>Crystal Hummingbird Collector</h1>
+    </div>
+	
+	<!--Body Rows-->
+    <div class="row">
+      <div class="col-xs-12 col-md-10">
+	    <div class = "panel panel-info">
+	      <div class ="panel-heading" id ="flip">
+	        <h3 class ="panel-title">Click here to view the instructions:</h3>
+	      </div>
+          <div class ="panel-body" id="instructions">
+	        <p>You are an enthusiastic bird-watcher and photographer. You will be given a Goal for the total number of pictures you need to capture of these beautiful hummingbirds.</p>
+		    <p>There are four crystal hummingbirds. By clicking on each one you will snap a certain number of pictures.</p>
+		    <p>You win the game by matching your total score exactly to your Goal. You lose the game if your total score goes above the Goal.</p>
+		    <p>The value of each hummingbird is hidden from you until you click on it.</p>
+		    <p>Each time when the game re-starts, the game will change the values of each hummingbird.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="clearfix visible-xs-block"></div>
+	  <div class="hidden-xs hidden-sm col-md-2">
+	    <button type="button" class="btn btn-lg btn-primary replay">Play again?</button>
+	  </div>
+    </div>
+
+	<div class ="row">
+	  <div class ="col-xs-4 col-md-4">
+	    <h2 class ="text-center">Wins: <span id = "wins"></span></h2>
+		<h3 id ="winMessage">On the money! You win!<h3>
+	  </div>
+	  <div class ="col-xs-4 col-md-4">
+	    <h2 class="text-center">Goal: <span id ="target"></span></h2>
+	  </div>
+	  <div class ="col-xs-4 col-md-4">
+	    <h2 class ="text-center">Losses: <span id = "losses"></span></h2>
+		<h3 id ="lostMessage">You overshot the goal! Sorry, you lose!<h3>
+	  </div>
+	</div>
+
+	<!-- images from pixabay.com -->
+	<div class ="row spacing">
+	  <div class ="col-xs-3 col-md-3">
+	    <img id ="ruby" src = "https://cdn.pixabay.com/photo/2017/06/20/20/34/cuba-2424684_960_720.jpg" alt="ruby" class ="img-responsive img-circle bird">
+		<div class ="caption text-center spacing">Ruby Hummingbird</div>
+	  </div>
+	  <div class ="col-xs-3 col-md-3">
+	    <img id ="sapphire" src ="https://cdn.pixabay.com/photo/2016/11/14/15/29/hummingbird-1823829_960_720.jpg" alt ="sapphire" class ="img-responsive img-circle bird">
+	    <div class ="caption text-center spacing">Sapphire Hummingbird</div>
+	  </div>
+	  <div class ="col-xs-3 col-md-3">
+	    <img id ="emerald" src ="https://cdn.pixabay.com/photo/2016/11/09/15/12/hummingbird-1811939_960_720.jpg" alt ="emerald" class ="img-responsive img-circle bird">
+	    <div class ="caption text-center spacing">Emerald Hummingbird</div>
+	  </div>
+	  <div class ="col-xs-3 col-md-3">
+	    <img id ="topaz" src ="https://cdn.pixabay.com/photo/2017/06/03/23/59/bird-2370015_960_720.jpg" alt ="topaz" class ="img-responsive img-circle bird">
+	    <div class ="caption text-center spacing">Topaz Hummingbird</div>
+	    <div class="clearfix visible-md-block"></div>
+	  </div>
+	</div>
+
+	<div class ="row">
+	  <div class  = "col-xs-8 col-md-8 col-md-offset-2">
+	    <div class = "panel panel-info">
+		  <div class ="panel-heading hidden-xs hidden-sm">
+		    <h3 class="panel-title text-center">Your total score is:</h3>
+		  </div>
+		  <div class ="panel-body text-center"><span class="hidden-md hidden-lg">Your total score is: </span>
+		  <span id = "fluidCount"></span>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-xs-2 hidden-md hidden-lg">
+	    <button type="button" class="btn btn-lg btn-primary replay">Play again?</button>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="progress">
+	      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progress-bar" aria-value-now="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+	        0%
+		  </div>
+		</div>
+	  </div>
+	</div>
+  <!--Close the container-->
+  </div>
+  <!-- JQuery -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Link Javascript file-->
+  <script type = "text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#instructions, #winMessage, #lostMessage{
+  display:none;
+}
+
+body{
+  /* Background pattern from Subtle Patterns  
+  https://www.toptal.com/designers/subtlepatterns/?s=diamond*/
+  background-image:url("../images/whitediamond/whitediamond.png");
+  padding-bottom: 50px;
+  font-family: 'Merriweather', serif;
+}
+
+img{
+  height : 360px;
+  width : 240px;
+}
+
+img:hover{
+  opacity:.7;
+}
+
+.jumbotron{
+  background-color:#c5e4f5;
+}
+
+.panel-title:hover{
+  font-weight: bold;
+}
+
+.panel-body{
+  font-size: large;
+}
+.spacing{
+  margin:15px 0px;
+  padding:5px;
+}
+
+.caption{
+  font-family: 'Pacifico', cursive;
+  font-size: large;
+}
+
+#winMessage{
+  color:green;
+  font-weight:bold;
+  text-align:center;
+}
+
+#lostMessage{
+  color:red;
+  font-weight:bold;
+  text-align:center;
+}
+
+#losses{
+  color:red;
+}
+
+#wins{
+  color:green;
+}
+
+#target{
+  color:purple;
+}
+
+#fluidCount{
+  font-size:xx-large;
+}
+
+@media screen and (max-width: 768px){
+
+body{
+  margin:auto;
+}
+.caption{
+  font-size: small;
+}
+
+img{
+  height : 180px;
+  width : 120px;
+  margin:auto;
+}
+
+h3{
+  font-size:small;
+}
+.spacing{
+  margin: 5px 0px;
+  padding:5px;
+}
+.caption{
+  display:none;
+}
+}
+
+@media screen and (max-width: 980px) and (min-width:769px){
