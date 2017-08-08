@@ -58,9 +58,6 @@ $(document).ready(function(){
 		$(".progress-bar").addClass("progress-bar-danger");
         } 
 	}
-		else {
-		alert("Do you want to play again?  Please hit the 'Play Again' button.");
-	}
   });
 	
 	$(".replay").on("click", function() {

@@ -4,8 +4,8 @@
 
 body{
   /* Background pattern from Subtle Patterns  
-  https://www.toptal.com/designers/subtlepatterns/?s=diamond*/
-  background-image:url("../images/whitediamond/whitediamond.png");
+  https://www.toptal.com/designers/subtlepatterns/?s=flower*/
+  background-image:url("../images/tree_bark/tree_bark.png");
   padding-bottom: 50px;
   font-family: 'Merriweather', serif;
 }
@@ -20,7 +20,8 @@ img:hover{
 }
 
 .jumbotron{
-  background-color:#c5e4f5;
+  background-color: mediumaquamarine;
+  color:sienna;
 }
 
 .panel-title:hover{
@@ -47,13 +48,13 @@ img:hover{
 }
 
 #lostMessage{
-  color:red;
+  color:crimson;
   font-weight:bold;
   text-align:center;
 }
 
 #losses{
-  color:red;
+  color:crimson;
 }
 
 #wins{
@@ -61,11 +62,12 @@ img:hover{
 }
 
 #target{
-  color:purple;
+  color:sienna;
 }
 
 #fluidCount{
   font-size:xx-large;
+  color:dimgray;
 }
 
 @media screen and (max-width: 768px){
