@@ -60,6 +60,7 @@ $(document).ready(function(){
 	    gameOver = true;
 	    $(".progress-bar").removeClass("progress-bar-info");
 	    $(".progress-bar").addClass("progress-bar-success");
+	    document.getElementById("chirp").play();
         }
 	  
 	    else if (counter >= targetNumber){
@@ -69,6 +70,7 @@ $(document).ready(function(){
 		gameOver = true;
 		$(".progress-bar").removeClass("progress-bar-info");
 		$(".progress-bar").addClass("progress-bar-danger");
+		document.getElementById("birdFlap").play();
         } 
 	}
   });
